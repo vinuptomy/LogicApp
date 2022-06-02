@@ -97,7 +97,7 @@
                             {
                                 "name": "UserCalimData",
                                 "type": "string",
-                                "value": "i:0#.w|at-work\\@{body('Get_user_profile_(V2)')?['mailNickname']}"
+                                "value": "i:0#.w|domain\\@{body('Get_user_profile_(V2)')?['mailNickname']}"
                             }
                         ]
                     }
@@ -168,7 +168,7 @@
                                     }
                                 },
                                 "method": "get",
-                                "path": "/datasets/@{encodeURIComponent(encodeURIComponent('https://dreiaustriagmbh.sharepoint.com/sites/EUIS'))}/tables/@{encodeURIComponent(encodeURIComponent('783d375b-92d0-4f82-9e2f-3c1b2624fa50'))}/items",
+                                "path": "/datasets/@{encodeURIComponent(encodeURIComponent('SPsiteurl'))}/tables/@{encodeURIComponent(encodeURIComponent('783d375b-92d0-4f82-9e2f-3c1b2624fa50'))}/items",
                                 "queries": {
                                     "$filter": "OrgUnitID eq '@{body('Parse_JSON_2')?['onPremisesExtensionAttributes']?['extensionAttribute1']}'",
                                     "$top": 1
@@ -521,10 +521,10 @@
         }
     },
     "id": "/subscriptions/33827306-30af-4679-937c-44bf3aff7175/resourceGroups/CalendarSyncPOC_group/providers/Microsoft.Logic/workflows/H3ASaaSBookadoCalendarSyncTest",
-    "name": "H3ASaaSBookadoCalendarSyncTest",
+    "name": "CalendarSyncTest",
     "type": "Microsoft.Logic/workflows",
     "location": "westeurope",
     "tags": {
-        "Teams": "Dots"
+        "Teams": "POC"
     }
 }
