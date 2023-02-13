@@ -143,7 +143,7 @@
                                             }
                                         },
                                         "method": "post",
-                                        "path": "/datasets/@{encodeURIComponent(encodeURIComponent('https://t32.at.three.com/sites/apps/officecalendartest'))}/tables/@{encodeURIComponent(encodeURIComponent(items('For_each')?['Title']))}/items"
+                                        "path": "/datasets/@{encodeURIComponent(encodeURIComponent('https://sponpremise.com/sites/apps/officecalendartest'))}/tables/@{encodeURIComponent(encodeURIComponent(items('For_each')?['Title']))}/items"
                                     }
                                 }
                             },
@@ -520,7 +520,7 @@
             }
         }
     },
-    "id": "/subscriptions/33827306-30af-4679-937c-44bf3aff7175/resourceGroups/CalendarSyncPOC_group/providers/Microsoft.Logic/workflows/H3ASaaSBookadoCalendarSyncTest",
+    "id": "/subscriptions/33827306-30af-4679-937c-44bf3aff7175/resourceGroups/CalendarSyncPOC_group/providers/Microsoft.Logic/workflows/CalendarSyncTest",
     "name": "CalendarSyncTest",
     "type": "Microsoft.Logic/workflows",
     "location": "westeurope",
